@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-clement",
+  "version": "0.0.0",
+  "authors": [
+    "clement Marin <cle.marin.38@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  }
+}
