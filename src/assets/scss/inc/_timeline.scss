@@ -1,0 +1,51 @@
+
+h3.univ{
+  margin-top: -15px;
+  color: SteelBlue;
+}
+
+@media all and ( min-width: 610px ) {
+
+  i.icon-home{
+    margin-right: 15px;
+    border:0.1em solid Black;
+    border-radius:50%;
+  }
+
+  i.icon-graduation-cap{
+    margin-right: 15px;
+    border:0.1em solid LightSkyBlue;
+    border-radius:50%;
+  }
+
+  div.trait
+  {
+    float:right;
+    margin-right: 27px;
+    width:5px;
+    border-left: 0.1em solid LightSkyBlue;
+    height:100px;
+  }
+
+  div.trait-exp
+  {
+    margin-right: 30px;
+    //width:5px;
+    padding-right: 15px;
+    border-right: 0.1em solid Black;
+    height:55px;
+  }
+
+  .annee, .af{
+    text-align: right;
+  }
+
+  .details, .df{
+    text-align: left;
+  }
+
+  .df, .af{
+    color:RoyalBlue;
+  }
+
+}
