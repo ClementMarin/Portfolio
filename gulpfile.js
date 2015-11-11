@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-
+var gulp = require('gulp'),
+    useref = require('gulp-useref'),
+    gulpif = require('gulp-if'),
+    uglify = require('gulp-uglify'),
+    minifyCss = require('gulp-minify-css');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -31,4 +35,16 @@ gulp.task('sass:watch', function () {
 // ici la tache par default
 gulp.task('default', function() {
   // place code for your default task here
+});
+
+gulp.task('html', function () {
+    var assets = useref.assets();
+
+    return gulp.src('./src/*.html')
+        .pipe(assets)
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', minifyCss()))
+        .pipe(assets.restore())
+        .pipe(useref())
+        .pipe(gulp.dest('www'));
 });
