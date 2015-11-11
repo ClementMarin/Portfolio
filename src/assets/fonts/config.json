@@ -19,6 +19,12 @@
       "src": "entypo"
     },
     {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59403,
+      "src": "entypo"
+    },
+    {
       "uid": "0805cca616b3c12714f35af4d0912c10",
       "css": "up-open-big",
       "code": 59399,
@@ -59,6 +65,12 @@
       "css": "globe-1",
       "code": 59397,
       "src": "modernpics"
+    },
+    {
+      "uid": "e9e96618b0f44170930f9b179237c76e",
+      "css": "linkedin-rect",
+      "code": 59402,
+      "src": "brandico"
     },
     {
       "uid": "3c4a596e8ee3584c4c9e7002371db19f",
