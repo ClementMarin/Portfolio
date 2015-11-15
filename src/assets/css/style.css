@@ -1,23 +1,116 @@
+@charset "UTF-8";
 /* imports */
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+ul,
+li {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.p {
+  text-align: center;
+  color: white;
+  padding-top: 150px;
+  font-size: .9em; }
+
+.p a {
+  color: white;
+  text-decoration: underline; }
+
+/* MENU STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.row {
+  min-height: 80px;
+  margin: 0; }
+
+.col-xs-2 {
+  padding: 0; }
+
+ul a {
+  display: block;
+  padding: 15px 0;
+  text-transform: uppercase;
+  background: #fff0a0;
+  transition: background 0.3s ease; }
+
+ul a:before {
+  font-family: FontAwesome;
+  padding-right: 1px;
+  font-size: 22px;
+  display: inline-block; }
+
+ul li:nth-child(1) a:before {
+  content: '\f015'; }
+
+ul li:nth-child(2) a:before {
+  content: '\f0eb'; }
+
+ul li:nth-child(3) a:before {
+  content: '\f115'; }
+
+ul li:nth-child(4) a:before {
+  content: '\f1ea'; }
+
+ul li:nth-child(5) a:before {
+  content: '\f03e'; }
+
+ul a:hover {
+  background: white; }
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 800px) {
+  ul a {
+    font-size: 0; }
+  ul a:before {
+    padding: 0 5px;
+    font-size: 32px; } }
+
+@media screen and (max-width: 500px) {
+  ul a:before {
+    font-size: 22px; } }
+
 h3.univ {
   margin-top: -15px;
   color: SteelBlue; }
 
+i.icon-home {
+  visibility: hidden; }
+
+i.icon-graduation-cap {
+  visibility: hidden; }
+
+.df, .af {
+  color: RoyalBlue; }
+
+.df, .details {
+  margin-top: -10px;
+  font-size: 18px; }
+
 @media all and (min-width: 610px) {
   i.icon-home {
+    visibility: visible;
     margin-right: 15px;
     border: 0.1em solid Black;
     border-radius: 50%; }
+  .df, .details {
+    margin-top: 17px; }
   i.icon-graduation-cap {
+    visibility: visible;
     margin-right: 15px;
-    border: 0.1em solid LightSkyBlue;
+    border: 0.1em solid DarkBlue;
     border-radius: 50%; }
   div.trait {
     float: right;
     margin-right: 27px;
     width: 5px;
-    border-left: 0.1em solid LightSkyBlue;
+    border-left: 0.1em solid DarkBlue;
     height: 100px; }
   div.trait-exp {
     margin-right: 30px;
@@ -27,55 +120,63 @@ h3.univ {
   .annee, .af {
     text-align: right; }
   .details, .df {
-    text-align: left; }
-  .df, .af {
-    color: RoyalBlue; } }
+    text-align: left; } }
 
-.html5-progress-bar {
-  padding: 15px 15px;
-  border-radius: 3px;
-  background-color: #fff;
-  box-shadow: 4px 4px 4px black; }
+ul.graph {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  width: 100%; }
 
-.html5-progress-bar progress {
-  background: #f3f3f3;
-  border: 0;
-  width: 100%;
-  height: 18px;
-  border-radius: 9px; }
+ul.graph li {
+  margin-bottom: .5em;
+  padding: .2em;
+  font-size: 0.8em;
+  background: #33cc33;
+  border-radius: 5px;
+  color: #fff; }
 
-.html5-progress-bar progress::-webkit-progress-bar {
-  background-color: #f3f3f3;
-  border-radius: 9px; }
+ul.graph li.percent0 {
+  background: #ff3300;
+  width: 0%; }
 
-.html5-progress-bar progress::-webkit-progress-value {
-  background: #cdeb8e;
-  background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(100%, #a5c956));
-  background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -o-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -ms-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
-  border-radius: 9px; }
+ul.graph li.percent10 {
+  background: #ff3300;
+  width: 10%; }
 
-.html5-progress-bar progress::-moz-progress-bar {
-  background: #cdeb8e;
-  background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdeb8e), color-stop(100%, #a5c956));
-  background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -o-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: -ms-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
-  background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
-  border-radius: 9px; }
+ul.graph li.percent20 {
+  background: #ff3300;
+  width: 20%; }
 
-.html5-progress-bar .progress-value {
-  text-align: center;
-  position: absolute;
-  font-size: .7em;
-  margin: -20px 0 0 1%;
-  color: #555; }
+ul.graph li.percent30 {
+  background: #ff3300;
+  width: 30%; }
+
+ul.graph li.percent40 {
+  background: #ff3300;
+  width: 40%; }
+
+ul.graph li.percent50 {
+  background: #ff6600;
+  width: 50%; }
+
+ul.graph li.percent60 {
+  background: #ff6600;
+  width: 60%; }
+
+ul.graph li.percent70 {
+  background: #ff6600;
+  width: 70%; }
+
+ul.graph li.percent80 {
+  width: 80%; }
+
+ul.graph li.percent90 {
+  width: 90%; }
+
+h2.comp {
+  color: white;
+  text-shadow: 0 4px 4px gray; }
 
 form {
   margin-left: 10%; }
@@ -152,15 +253,15 @@ div.contact, div.exp {
     color: blue;
     text-decoration: underline; }
 
-div.exp, div.comp, div.form, div.loisirs {
+div.exp, div.comp, div.form, div.loisirs, div.real {
   width: 100%;
   color: black;
   padding: 7% 7% 5% 7%; }
 
-div.exp {
+div.exp, div.loisirs, div.form {
   background-color: lightblue; }
 
-div.comp, div.loisirs {
+div.comp, div.real {
   background-color: CornflowerBlue; }
 
 .wrapper {

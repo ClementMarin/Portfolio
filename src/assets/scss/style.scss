@@ -67,17 +67,17 @@ div.contact, div.exp{
   }
 }
 
-div.exp, div.comp, div.form, div.loisirs{
+div.exp, div.comp, div.form, div.loisirs, div.real{
   width: 100%;
   color: black;
   padding: 7% 7% 5% 7%;
 }
 
-div.exp{
+div.exp, div.loisirs, div.form{
   background-color: lightblue;
 }
 
-div.comp, div.loisirs{
+div.comp, div.real{
   background-color: CornflowerBlue;
 }
 
