@@ -12,21 +12,28 @@
   <link rel="stylesheet" href="./assets/lib/normalize-css/normalize.css" />
   <link rel="stylesheet" href="./assets/fonts/css/fontello.css" />
   <link rel="stylesheet" href="./assets/lib/flexboxgrid/css/flexboxgrid.css" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <!-- endbuild -->
 
   <!-- Fichiers JavaScript -->
   <!-- build:js scripts/combined.js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="./assets/js/jquery.js" type="text/javascript"></script><!-- Insertion de la bibliotheque jQuery -->
-  <script type="text/javascript" src="./assets/js/localscroll/jquery.localscroll.js"></script>
-  <script type="text/javascript" src="./assets/js/localscroll/jquery.scrollTo.js"></script>
-  <script type="text/javascript" src="./assets/js/lancement.js"></script><!-- permet le lancement de la fonction de scroll -->
-
+  <script src="./assets/js/jquery.js" type="text/javascript"></script>
+  <script src="./assets/js/responsive-nav.js"></script>
   <!-- endbuild -->
 </head>
-<!--<a href="#"><img class="nav" src="./assets/images/français_nav.png"/></a>
-<a href="#"> <img class="nav" src="./assets/images/anglais_nav.png"/></a>-->
+<header>
+    <a href="#head" class="logo" data-scroll>Clément Marin</a>
+    <nav class="nav-collapse">
+      <ul>
+        <li class="menu-item"><a href="#form" data-scroll>Formation</a></li>
+        <li class="menu-item"><a href="#comp" data-scroll>Compétences</a></li>
+        <li class="menu-item"><a href="#exp" data-scroll>Expériences</a></li>
+        <li class="menu-item"><a href="#real" data-scroll>Réalisations</a></li>
+        <li class="menu-item"><a href="#loisirs" data-scroll>Loisirs</a></li>
+        <li class="menu-item"><a href="#contact" data-scroll>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 <body id="head">
   <div class="wrapper">
     <div class="accueil">
@@ -37,210 +44,213 @@
           <p style="width:75%; margin:auto;">Etudiant en informatique en Licence professionnelle Services Mobiles et Interface Nomade (SMIN).
             Je suis actuellement en recherche d'une alternance ou d'un stage pour parfaire mes connaissances.<br><br>
             Si mon profil vous intéresse, n'hésitez pas à <a style="color:blue;" href="#contact">me contacter</a>.</p>
-        </div>
-      </div>
-    </div>
-    <div class="form" id="form">
-      <h1>Formation</h1>
-      <div class="row">
-        <div class="col-1-3">
-          <h2 class="af">Aujourd'hui <i class="icon-graduation-cap"></i></h2>
-          <div class="trait"></div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="df">LP Service Nomade et Interfaces Mobiles (SMIN) </h2>
-          <h3 class="univ">Université Joseph Fourier - IUT 1 Grenoble <a href="https://iut1.ujf-grenoble.fr/"><i class="icon-link"></i></a></h3>
-          <p>Être formé aux technologies de l'internet, aux services Web Mobiles et à l'adaptation des supports Web à la téléphonie mobile. Acquérir une base solide en informatique et en traitement de l'information appliquée à la fourniture et à l'utilisation des services mobiles. Savoir participer à un projet de développement d'application pour Internet, sur de multiples supports.</p>
-        </div>
-        <div class="col-1-3">
-          <h2 class="af">Juin 2015 <i class="icon-graduation-cap"></i></h2>
-          <div class="trait"></div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="df">Diplôme Universitaire de Technologie Informatique </h2>
-          <h3 class="univ">IUT Belfort-Montbéliard <a href="http://www.iut-bm.univ-fcomte.fr/"><i class="icon-link"></i></a></h3>
-          <p>Être polyvalent, savoir répondre à l'essentiel des besoins informatiques d'une entreprise et au développement d'applications spécifiques au support utilisateur.</p>
-        </div>
-        <div class="col-1-3">
-          <h2 class="af">2012/2013 <i class="icon-graduation-cap"></i></h2>
-          <div class="trait"></div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="df">1<sup>ère</sup> année de classe préparatoire </h2>
-          <h3 class="univ">Université de technologie de Belfort-Montbéliard<a href="http://www.utbm.fr/"><i class="icon-link"></i></a></h3>
-          <p>Être formé sur les disciplines scientifiques (mathématiques, physique, chimie), techniques (informatique, technologique, mécanique) et linguistiques (français et langues étrangères). Avoir un premier contact avec le monde industriel  et  découvrir les sciences humaines et la culture générale.</p>
-        </div>
-        <div class="col-1-3">
-          <h2 class="af">Juin 2012 <i class="icon-graduation-cap"></i></h2>
-        </div>
-        <div class="col-2-3">
-          <h2 class="df">Baccalauréat scientifique, spécialité mathématique</h2>
-          <h3 class="univ">Lycée pierre du Terrail - Pontcharra (Isère)<a href="http://www.ac-grenoble.fr/lycee/pierre-du-terrail/index.php?lng=fr"><i class="icon-link"></i></a></h3>
-        </div>
-      </div><!-- /.row -->
-    </div>
-    <div id="comp" class="comp">
-      <h1>Compétences</h1>
-      <div class="row">
-        <div class="col-1-2">
-          <h2 class="comp">Dev. web</h2>
-          <ul class="graph">
-            <li class="percent80"><i class="devicon-css3-plain"></i> 80%</li>
-            <li class="percent80"><i class="devicon-html5-plain"></i> 80%</li>
-            <li class="percent80"><i class="devicon-php-plain"></i> 80%</li>
-            <li class="percent40"><i class="devicon-javascript-plain"></i> 40%</li>
-            <li class="percent30"><i class="devicon-angularjs-plain"></i> 30%</li>
-            <li class="percent30"><i class="devicon-sass-original"></i> 30%</li>
-          </ul>
-        </div>
-        <div class="col-1-2">
-          <h2 class="comp">Dev. logiciel/mobile</h2>
-          <ul class="graph">
-            <li class="percent90"><i class="devicon-java-plain"></i> - 90%</li>
-            <li class="percent70">WPF - 70%</li>
-            <li class="percent60"><i class="devicon-android-plain"></i> - 60%</li>
-            <li class="percent50"><i class="devicon-c-plain"></i>/<i class="devicon-cplusplus-plain"></i> - 50%</li>
-            <li class="percent50"><i class="devicon-python-plain"></i> - 50%</li>
-            <li class="percent20"><i class="devicon-apple-original"></i> - 20%</li>
-          </ul>
-        </div>
-        <div class="col-1-2">
-          <h2 class="comp">Langues</h2>
-          <ul class="graph">
-            <li class="percent90">Anglais - 90%</li>
-            <li class="percent50">Espagnol - 50%</li>
-            <li class="percent30">Allemand - 30%</li>
-          </ul>
-        </div>
-        <div class="col-1-2">
-          <h2 class="comp">Syst. d'exploitation </h2>
-          <ul class="graph">
-            <li class="percent70"><i class="devicon-windows8-original"></i> - 70%</li>
-            <li class="percent70"><i class="devicon-linux-plain"></i> - 70%</li>
-            <li class="percent70"><i class="devicon-apple-original"></i> - 70%</li>
-          </ul>
-        </div>
-      </div><!-- /.row -->
-    </div>
-    <div class="exp" id="exp">
-      <h1>Expériences professionnelles</h1>
-      <div class="row">
-        <div class="col-1-3 annee">
-          <h2 class="annee">Juin à Août 2015 <i class="icon-home"></i></h2>
-          <div class="trait-exp">Société Icare – Wittelsheim (Alsace)</div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="details">CDD développement WPF</h2>
-          <b><i>Objectif</i>:</b> Continuer l'application développée en stage<br>
-          <b><i>Tâches effectuées</i>:</b> Réalisation de l'application WPF, modélisation les vues, réalisation de l'API (PHP) servant de passerelle entre le server et l'application
-        </div>
-        <div class="col-1-3 annee">
-          <h2 class="annee">Mars à Juin 2015 <i class="icon-home"></i></h2>
-          <div class="trait-exp">Société Icare – Wittelsheim (Alsace)</div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="details">Stage développement WPF</h2>
-          <b><i>Objectif</i>:</b> Découvrir le monde de l'informatique en entreprise<br>
-          <b><i>Tâches effectuées</i>:</b> Modélisation et conception de la base de données, conception d'une application en WPF afin de facilité la gestion des clients, contrats...
-          Réalisations des visuels des différentes fenêtres
-        </div>
-        <div class="col-1-3 annee">
-          <h2 class="annee">Juillet/Aout 2014 <i class="icon-home"></i></h2>
-          <div class="trait-exp">Société RBP Pharma - La Terrasse (Isère)</div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="details">Préparateur de commande</h2>
-          <b><i>Tâche effectuée</i>:</b> Préparation de livraisons de médicaments pour différentes pharmacies en France
-        </div>
-        <div class="col-1-3 annee">
-          <h2 class="annee">Février 2013 <i class="icon-home"></i></h2>
-          <div class="trait-exp">Société Tronics Microsystems - Crolles (Isère)</div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="details">Stage ouvrier</h2>
-          <b><i>Objectif</i>:</b> Découvrir le monde de l'entreprise en tant qu'ouvrier<br>
-          <b><i>Tâches effectuées</i>:</b> Conception de pièces servant à la fermeture des microsystèmes électromécaniques
-        </div>
-        <div class="col-1-3 annee">
-          <h2 class="annee">Juillet 2011 <i class="icon-home"></i></h2>
-          <div style="margin-right: 45px">Mairie de La Terrasse (Isère)</div>
-        </div>
-        <div class="col-2-3">
-          <h2 class="details">Job d'été : Chantiers jeunes</h2>
-          <b><i>Objectif</i>:</b> Travailler au sein de la commune de la Terrasse<br>
-          <b><i>Tâches effectuées</i>:</b> Entretien d’espaces verts et nettoyage de la voirie
-        </div>
-      </div><!-- /.row -->
-    </div>
-    <div class="real" id="real">
-      <h1>Réalisation</h1>
-      <div class="row">
-        <div class="col-1-4">
-          <div class="rea">
-            <a href="http://clement-marin.xyz">
-            <img src="./assets/images/portfolio.jpg"></img>
-            <h2 class="rea">PortFolio</h2>
-          </a>
           </div>
         </div>
-      </div><!-- /.row -->
-    </div>
-    <div class="loisirs" id="loisirs">
-      <h1>Loisirs</h1>
-      <div class="row">
-        <div class="col-1">
-          <h2>Le sport</h2>
-          <p style="text-align:justify">
-            J'aime pratiquer en loisir le tennis, le badminton, le handball et l'équitation. J'ai eu l'occasion de pouvoir arbitrer des matchs de tennis et de badminton.<br><br>
-            Je me passionne également pour les sports américains. Je suis un grand fan de hockey sur glace et fervant supporter des Bruleurs de loups (équipe de Grenoble).
-            Je m'intéresse aussi de près au football américain (fan des Centaures de Grenoble et des 49ers de San Franscico) et aussi au baseball.<br><br>
-            J'aime me documenter et suivre l'actualité de ces sports grâce aux magazines dédiés telles que SlapShot (Hockey sur glace) ou 4th and Goal (Foot US).
-          </p>
-        </div>
-        <div class="col-1">
-          <h2>Le modélisme</h2>
-          <p style="text-align:justify">
-            Je m'intéresse beaucoup, depuis mon plus jeune âge, au modélisme radiocommandé. J'ai pu minicier au modélisme terrestre, aérien et j'aimerai beaucoup découvert le monde nautique.
-            J'aime aussi concevoir des maquettes et j'ai réalisé de nombreux avions, bateaux, voitures, chars...
-            Je me suis intéressé à une période au modélisme féroviaire et j'avais entrepris la construction d'un circuit détailé (décorts et maquettes).
-          </p>
-        </div>
-        <div class="col-1">
-          <h2>Autres</h2>
-          <p style="text-align:justify">
-            J'aime beaucoup jouer aux jeux de société et aux jeux vidéo. Je joue essentiellement à des jeux de stratégie, de gestion, de tir et de reflexion. J'aime aussi lire des livres en rapports avec les jeux ou la presse dédiée aux jeux vidéo.<br><br>
-            J'aime voyager et découvrir de nouveaux horizon. J'ai eu l'occasion dans mon enfance de découvrir les pays européens (Irlande, Allemagne, Italie, Espagne...), les Etats-Unis et les différentes régions françaises.
-          </p>
-        </div>
-      </div><!-- /.row -->
-    </div>
+      </div>
+      <div class="form" id="form">
+        <h1>Formation</h1>
+        <div class="row">
+          <div class="col-1-3">
+            <h2 class="af">Aujourd'hui <i class="icon-graduation-cap"></i></h2>
+            <div class="trait"></div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="df">LP Service Nomade et Interfaces Mobiles (SMIN) </h2>
+            <h3 class="univ">Université Joseph Fourier - IUT 1 Grenoble <a href="https://iut1.ujf-grenoble.fr/"><i class="icon-link"></i></a></h3>
+            <p>Être formé aux technologies de l'internet, aux services Web Mobiles et à l'adaptation des supports Web à la téléphonie mobile. Acquérir une base solide en informatique et en traitement de l'information appliquée à la fourniture et à l'utilisation des services mobiles. Savoir participer à un projet de développement d'application pour Internet, sur de multiples supports.</p>
+          </div>
+          <div class="col-1-3">
+            <h2 class="af">Juin 2015 <i class="icon-graduation-cap"></i></h2>
+            <div class="trait"></div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="df">Diplôme Universitaire de Technologie Informatique </h2>
+            <h3 class="univ">IUT Belfort-Montbéliard <a href="http://www.iut-bm.univ-fcomte.fr/"><i class="icon-link"></i></a></h3>
+            <p>Être polyvalent, savoir répondre à l'essentiel des besoins informatiques d'une entreprise et au développement d'applications spécifiques au support utilisateur.</p>
+          </div>
+          <div class="col-1-3">
+            <h2 class="af">2012/2013 <i class="icon-graduation-cap"></i></h2>
+            <div class="trait"></div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="df">1<sup>ère</sup> année de classe préparatoire </h2>
+            <h3 class="univ">Université de technologie de Belfort-Montbéliard<a href="http://www.utbm.fr/"><i class="icon-link"></i></a></h3>
+            <p>Être formé sur les disciplines scientifiques (mathématiques, physique, chimie), techniques (informatique, technologique, mécanique) et linguistiques (français et langues étrangères). Avoir un premier contact avec le monde industriel  et  découvrir les sciences humaines et la culture générale.</p>
+          </div>
+          <div class="col-1-3">
+            <h2 class="af">Juin 2012 <i class="icon-graduation-cap"></i></h2>
+          </div>
+          <div class="col-2-3">
+            <h2 class="df">Baccalauréat scientifique, spécialité mathématique</h2>
+            <h3 class="univ">Lycée pierre du Terrail - Pontcharra (Isère)<a href="http://www.ac-grenoble.fr/lycee/pierre-du-terrail/index.php?lng=fr"><i class="icon-link"></i></a></h3>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <div id="comp" class="comp">
+        <h1>Compétences</h1>
+        <div class="row">
+          <div class="col-1-2">
+            <h2 class="comp">Dev. web</h2>
+            <ul class="graph">
+              <li class="percent80"><i class="devicon-css3-plain"></i> 80%</li>
+              <li class="percent80"><i class="devicon-html5-plain"></i> 80%</li>
+              <li class="percent80"><i class="devicon-php-plain"></i> 80%</li>
+              <li class="percent40"><i class="devicon-javascript-plain"></i> 40%</li>
+              <li class="percent30"><i class="devicon-angularjs-plain"></i> 30%</li>
+              <li class="percent30"><i class="devicon-sass-original"></i> 30%</li>
+            </ul>
+          </div>
+          <div class="col-1-2">
+            <h2 class="comp">Dev. logiciel/mobile</h2>
+            <ul class="graph">
+              <li class="percent90"><i class="devicon-java-plain"></i> - 90%</li>
+              <li class="percent70">WPF - 70%</li>
+              <li class="percent60"><i class="devicon-android-plain"></i> - 60%</li>
+              <li class="percent50"><i class="devicon-c-plain"></i>/<i class="devicon-cplusplus-plain"></i> - 50%</li>
+              <li class="percent50"><i class="devicon-python-plain"></i> - 50%</li>
+              <li class="percent20"><i class="devicon-apple-original"></i> - 20%</li>
+            </ul>
+          </div>
+          <div class="col-1-2">
+            <h2 class="comp">Langues</h2>
+            <ul class="graph">
+              <li class="percent90">Anglais - 90%</li>
+              <li class="percent50">Espagnol - 50%</li>
+              <li class="percent30">Allemand - 30%</li>
+            </ul>
+          </div>
+          <div class="col-1-2">
+            <h2 class="comp">Syst. d'exploitation </h2>
+            <ul class="graph">
+              <li class="percent70"><i class="devicon-windows8-original"></i> - 70%</li>
+              <li class="percent70"><i class="devicon-linux-plain"></i> - 70%</li>
+              <li class="percent70"><i class="devicon-apple-original"></i> - 70%</li>
+            </ul>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <div class="exp" id="exp">
+        <h1>Expériences professionnelles</h1>
+        <div class="row">
+          <div class="col-1-3 annee">
+            <h2 class="annee">Juin à Août 2015 <i class="icon-home"></i></h2>
+            <div class="trait-exp">Société Icare – Wittelsheim (Alsace)</div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="details">CDD développement WPF</h2>
+            <b><i>Objectif</i>:</b> Continuer l'application développée en stage<br>
+            <b><i>Tâches effectuées</i>:</b> Réalisation de l'application WPF, modélisation les vues, réalisation de l'API (PHP) servant de passerelle entre le server et l'application
+          </div>
+          <div class="col-1-3 annee">
+            <h2 class="annee">Mars à Juin 2015 <i class="icon-home"></i></h2>
+            <div class="trait-exp">Société Icare – Wittelsheim (Alsace)</div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="details">Stage développement WPF</h2>
+            <b><i>Objectif</i>:</b> Découvrir le monde de l'informatique en entreprise<br>
+            <b><i>Tâches effectuées</i>:</b> Modélisation et conception de la base de données, conception d'une application en WPF afin de facilité la gestion des clients, contrats...
+            Réalisations des visuels des différentes fenêtres
+          </div>
+          <div class="col-1-3 annee">
+            <h2 class="annee">Juillet/Aout 2014 <i class="icon-home"></i></h2>
+            <div class="trait-exp">Société RBP Pharma - La Terrasse (Isère)</div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="details">Préparateur de commande</h2>
+            <b><i>Tâche effectuée</i>:</b> Préparation de livraisons de médicaments pour différentes pharmacies en France
+          </div>
+          <div class="col-1-3 annee">
+            <h2 class="annee">Février 2013 <i class="icon-home"></i></h2>
+            <div class="trait-exp">Société Tronics Microsystems - Crolles (Isère)</div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="details">Stage ouvrier</h2>
+            <b><i>Objectif</i>:</b> Découvrir le monde de l'entreprise en tant qu'ouvrier<br>
+            <b><i>Tâches effectuées</i>:</b> Conception de pièces servant à la fermeture des microsystèmes électromécaniques
+          </div>
+          <div class="col-1-3 annee">
+            <h2 class="annee">Juillet 2011 <i class="icon-home"></i></h2>
+            <div style="margin-right: 45px">Mairie de La Terrasse (Isère)</div>
+          </div>
+          <div class="col-2-3">
+            <h2 class="details">Job d'été : Chantiers jeunes</h2>
+            <b><i>Objectif</i>:</b> Travailler au sein de la commune de la Terrasse<br>
+            <b><i>Tâches effectuées</i>:</b> Entretien d’espaces verts et nettoyage de la voirie
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <div class="real" id="real">
+        <h1>Réalisation</h1>
+        <div class="row">
+          <div class="col-1-4">
+            <div class="rea">
+              <a href="http://clement-marin.xyz">
+                <img src="./assets/images/portfolio.jpg"></img>
+                <h2 class="rea">PortFolio</h2>
+              </a>
+            </div>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <div class="loisirs" id="loisirs">
+        <h1>Loisirs</h1>
+        <div class="row">
+          <div class="col-1">
+            <h2>Le sport</h2>
+            <p style="text-align:justify">
+              J'aime pratiquer en loisir le tennis, le badminton, le handball et l'équitation. J'ai eu l'occasion de pouvoir arbitrer des matchs de tennis et de badminton.<br><br>
+              Je me passionne également pour les sports américains. Je suis un grand fan de hockey sur glace et fervant supporter des Bruleurs de loups (équipe de Grenoble).
+              Je m'intéresse aussi de près au football américain (fan des Centaures de Grenoble et des 49ers de San Franscico) et aussi au baseball.<br><br>
+              J'aime me documenter et suivre l'actualité de ces sports grâce aux magazines dédiés telles que SlapShot (Hockey sur glace) ou 4th and Goal (Foot US).
+            </p>
+          </div>
+          <div class="col-1">
+            <h2>Le modélisme</h2>
+            <p style="text-align:justify">
+              Je m'intéresse beaucoup, depuis mon plus jeune âge, au modélisme radiocommandé. J'ai pu minicier au modélisme terrestre, aérien et j'aimerai beaucoup découvert le monde nautique.
+              J'aime aussi concevoir des maquettes et j'ai réalisé de nombreux avions, bateaux, voitures, chars...
+              Je me suis intéressé à une période au modélisme féroviaire et j'avais entrepris la construction d'un circuit détailé (décorts et maquettes).
+            </p>
+          </div>
+          <div class="col-1">
+            <h2>Autres</h2>
+            <p style="text-align:justify">
+              J'aime beaucoup jouer aux jeux de société et aux jeux vidéo. Je joue essentiellement à des jeux de stratégie, de gestion, de tir et de reflexion. J'aime aussi lire des livres en rapports avec les jeux ou la presse dédiée aux jeux vidéo.<br><br>
+              J'aime voyager et découvrir de nouveaux horizon. J'ai eu l'occasion dans mon enfance de découvrir les pays européens (Irlande, Allemagne, Italie, Espagne...), les Etats-Unis et les différentes régions françaises.
+            </p>
+          </div>
+        </div><!-- /.row -->
+      </div>
 
-    <div class="contact" id="contact">
-      <h1>Me contacter</h1>
-      <div class="row">
-        <div class="col-1-3 coord">
-          <h2>Coordonnées</h2>
-          <i class="icon-globe"></i>:
-          ￼6b, Chemin Joseph Brun<br>
-          38100 Grenoble <br><br>
-          <i class="icon-mobile"></i>: 06 88 54 87 52 <br><br>
-          <i class="icon-mail-1"></i>: <a href="mailto:contact@clement-marin.xyz">contact@clement-marin.xyz</a> <br><br>
-          <i class="icon-file-pdf"></i>: <a href="CV_Clement_MARIN_LP_SMIN.pdf">Télécharger</a><br/><br>
-          <i class="icon-linkedin-rect">: <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8">LinkedIn</i></a>
-        </div>
-        <div class="col-2-3">
-          <h2>Formulaire de contact</h2>
-          <form name="form1" method="post" action="./envoyer.php">
-            <input type="text" placeholder="Entrez votre nom ou société" name="name" id="name" required ><br/><br/>
-            <input type="email" placeholder="Votre-email@gmail.com" name="email" id="email" required ><br/><br/>
-            <input type="text" placeholder="Entrez l'objet du message" name="city" id="city" required ><br/><br/>
-            <textarea name="monmessage" placeholder="Entrez le message à envoyer" id="monmessage" rows="4" cols="50" ></textarea><br/><br/>
-            <input class="sendButton" type="submit" name="Submit" value="Envoyer">
-          </form>
+      <div class="contact" id="contact">
+        <h1>Me contacter</h1>
+        <div class="row">
+          <div class="col-1-3 coord">
+            <h2>Coordonnées</h2>
+            <i class="icon-globe"></i>:
+            ￼6b, Chemin Joseph Brun<br>
+            38100 Grenoble <br><br>
+            <i class="icon-mobile"></i>: 06 88 54 87 52 <br><br>
+            <i class="icon-mail-1"></i>: <a href="mailto:contact@clement-marin.xyz">contact@clement-marin.xyz</a> <br><br>
+            <i class="icon-file-pdf"></i>: <a href="CV_Clement_MARIN_LP_SMIN.pdf">Télécharger</a><br/><br>
+            <i class="icon-linkedin-rect">: <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8">LinkedIn</i></a>
+          </div>
+          <div class="col-2-3">
+            <h2>Formulaire de contact</h2>
+            <form name="form1" method="post" action="./envoyer.php">
+              <input type="text" placeholder="Entrez votre nom ou société" name="name" id="name" required ><br/><br/>
+              <input type="email" placeholder="Votre-email@gmail.com" name="email" id="email" required ><br/><br/>
+              <input type="text" placeholder="Entrez l'objet du message" name="object" id="object" required ><br/><br/>
+              <textarea name="monmessage" placeholder="Entrez le message à envoyer" id="monmessage" rows="4" cols="50" ></textarea><br/><br/>
+              <input class="sendButton" type="submit" name="Submit" value="Envoyer">
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer style="text-align:center; height:50px; padding-top:1.5%"> © 2015 Clément Marin - <a style="color:white;" href="#head"> <i class="icon-up-open-big"></i></a></footer>
-</body>
-</html>
+    <footer style="text-align:center; height:50px; padding-top:1.5%"> © 2015 Clément Marin - <a style="color:white;" href="#head"> <i class="icon-up-open-big"></i></a></footer>
+    <script src="./assets/js/fastclick.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/fixed-responsive-nav.js"></script>
+  </body>
+  </html>
