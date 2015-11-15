@@ -1,5 +1,5 @@
 /* ------------------------------------------
-  RESPONSIVE NAV STYLES
+RESPONSIVE NAV STYLES
 --------------------------------------------- */
 
 .nav-collapse ul {
@@ -55,7 +55,7 @@
 }
 
 /* ------------------------------------------
-  FIXED HEADER
+FIXED HEADER
 --------------------------------------------- */
 
 header {
@@ -79,7 +79,7 @@ header {
 
 
 /* ------------------------------------------
-  MASK
+MASK
 --------------------------------------------- */
 
 .mask {
@@ -116,7 +116,7 @@ header {
 
 
 /* ------------------------------------------
-  NAVIGATION STYLES
+NAVIGATION STYLES
 --------------------------------------------- */
 
 .fixed {
@@ -198,16 +198,16 @@ header {
 
 
 /* ------------------------------------------
-  NAV TOGGLE STYLES
+NAV TOGGLE STYLES
 --------------------------------------------- */
 
 @font-face {
   font-family: "responsivenav";
   src:url(./icons/responsivenav.eot);
   src:url(./icons/responsivenav.eot?#iefix) format("embedded-opentype"),
-    url(./icons/responsivenav.ttf) format("truetype"),
-    url(./icons/responsivenav.woff) format("woff"),
-    url(./icons/responsivenav.svg#responsivenav) format("svg");
+  url(./icons/responsivenav.ttf) format("truetype"),
+  url(./icons/responsivenav.woff) format("woff"),
+  url(./icons/responsivenav.svg#responsivenav) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -244,7 +244,7 @@ header {
 }
 
 /* ------------------------------------------
-  OLD IE STYLES
+OLD IE STYLES
 --------------------------------------------- */
 
 .js .nav-collapse {

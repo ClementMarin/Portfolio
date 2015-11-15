@@ -1,7 +1,7 @@
 /* imports */
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 /* ------------------------------------------
-  RESPONSIVE NAV STYLES
+RESPONSIVE NAV STYLES
 --------------------------------------------- */
 .nav-collapse ul {
   margin: 0;
@@ -46,7 +46,7 @@
     display: none; } }
 
 /* ------------------------------------------
-  FIXED HEADER
+FIXED HEADER
 --------------------------------------------- */
 header {
   background: #4169E1;
@@ -66,7 +66,7 @@ header {
   float: left; }
 
 /* ------------------------------------------
-  MASK
+MASK
 --------------------------------------------- */
 .mask {
   -webkit-transition: opacity 300ms;
@@ -96,7 +96,7 @@ header {
     opacity: 0 !important; } }
 
 /* ------------------------------------------
-  NAVIGATION STYLES
+NAVIGATION STYLES
 --------------------------------------------- */
 .fixed {
   position: fixed;
@@ -161,7 +161,7 @@ header {
     display: none; } }
 
 /* ------------------------------------------
-  NAV TOGGLE STYLES
+NAV TOGGLE STYLES
 --------------------------------------------- */
 @font-face {
   font-family: "responsivenav";
@@ -203,7 +203,7 @@ header {
   /* Close icon */ }
 
 /* ------------------------------------------
-  OLD IE STYLES
+OLD IE STYLES
 --------------------------------------------- */
 .js .nav-collapse {
   position: relative; }
@@ -386,6 +386,17 @@ div.accueil {
   width: 100%;
   background-size: cover; }
 
+div.info {
+  text-align: center;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  padding-top: 12%; }
+
+p.info {
+  width: 75%;
+  margin: auto; }
+
 div.rea {
   background-color: black;
   color: white;
@@ -403,6 +414,10 @@ div.rea {
     opacity: 1.0;
     filter: alpha(opacity=100);
     /* For IE8 and earlier */ }
+
+a.rea {
+  color: black;
+  text-decoration: none; }
 
 div.transbox {
   background-color: #ffffff;
@@ -475,6 +490,11 @@ h2 {
 [class*="col-"] {
   padding: 5px;
   width: 100%; }
+
+footer {
+  text-align: center;
+  height: 50px;
+  padding-top: 1.5%; }
 
 @media all and (min-width: 610px) {
   h1 {

@@ -21,7 +21,8 @@
   <script src="./assets/js/responsive-nav.js"></script>
   <!-- endbuild -->
 </head>
-<header>
+<body id="head">
+  <header>
     <a href="#head" class="logo" data-scroll>Clément Marin</a>
     <nav class="nav-collapse">
       <ul>
@@ -34,14 +35,13 @@
       </ul>
     </nav>
   </header>
-<body id="head">
   <div class="wrapper">
     <div class="accueil">
       <div class="transbox">
-        <div style="text-align: center;width: 50%;height:30%; margin: auto; padding-top:12%">
+        <div class="info">
           <h1 class="ac">Clément Marin</h1>
           <h2 class="ac">Développeur web, mobile et Java</h2>
-          <p style="width:75%; margin:auto;">Etudiant en informatique en Licence professionnelle Services Mobiles et Interface Nomade (SMIN).
+          <p class="info">Etudiant en informatique en Licence professionnelle Services Mobiles et Interface Nomade (SMIN).
             Je suis actuellement en recherche d'une alternance ou d'un stage pour parfaire mes connaissances.<br><br>
             Si mon profil vous intéresse, n'hésitez pas à <a style="color:blue;" href="#contact">me contacter</a>.</p>
           </div>
@@ -184,8 +184,8 @@
         <div class="row">
           <div class="col-1-4">
             <div class="rea">
-              <a href="http://clement-marin.xyz">
-                <img src="./assets/images/portfolio.jpg"></img>
+              <a class="rea" href="http://clement-marin.xyz">
+                <img alt="portfolio" src="./assets/images/portfolio.jpg"/>
                 <h2 class="rea">PortFolio</h2>
               </a>
             </div>
@@ -233,7 +233,7 @@
             <i class="icon-mobile"></i>: 06 88 54 87 52 <br><br>
             <i class="icon-mail-1"></i>: <a href="mailto:contact@clement-marin.xyz">contact@clement-marin.xyz</a> <br><br>
             <i class="icon-file-pdf"></i>: <a href="CV_Clement_MARIN_LP_SMIN.pdf">Télécharger</a><br/><br>
-            <i class="icon-linkedin-rect">: <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8">LinkedIn</i></a>
+            <i class="icon-linkedin-rect"></i>: <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8">LinkedIn</a>
           </div>
           <div class="col-2-3">
             <h2>Formulaire de contact</h2>
@@ -248,7 +248,7 @@
         </div>
       </div>
     </div>
-    <footer style="text-align:center; height:50px; padding-top:1.5%"> © 2015 Clément Marin - <a style="color:white;" href="#head"> <i class="icon-up-open-big"></i></a></footer>
+    <footer> © 2015 Clément Marin - <a style="color:white;" href="#head"> <i class="icon-up-open-big"></i></a></footer>
     <script src="./assets/js/fastclick.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/fixed-responsive-nav.js"></script>

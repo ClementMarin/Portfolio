@@ -41,6 +41,19 @@ div.accueil{
   background-size: cover;
 }
 
+div.info{
+  text-align: center;
+  width: 50%;
+  height:30%;
+  margin: auto;
+  padding-top:12%;
+}
+
+p.info{
+  width:75%;
+  margin:auto;
+}
+
 div.rea{
   background-color: black;
   color: white;
@@ -58,6 +71,11 @@ div.rea{
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
   }
+}
+
+a.rea{
+  color:black;
+  text-decoration:none;
 }
 
 div.transbox
@@ -149,6 +167,12 @@ h2 {
 [class*="col-"] {
   padding: 5px;
   width: 100%;
+}
+
+footer{
+  text-align:center;
+  height:50px;
+  padding-top:1.5%;
 }
 
 @media all and ( min-width: 610px ) {
