@@ -4,78 +4,74 @@ ul.graph
 	padding: 10px;
 	list-style-type: none;
 	width:100%;
-}
 
-ul.graph li
-{
-	margin-bottom: .5em;
-	padding: .2em;
-	font-size: 0.8em;
-	background: #33cc33;
-	border-radius: 5px;
-	color: #fff;
-	//height: 20	px;
-}
+	li
+	{
+		margin-bottom: .5em;
+		padding: .2em;
+		font-size: 0.8em;
+		background: #33cc33;
+		border-radius: 5px;
+		color: #fff;
+		//height: 20	px;
 
-ul.graph li.percent0
-{
-	background: #ff3300;
-	width: 0%;
-}
+		&.percent0{
+			background: #ff3300;
+			width: 0%;
+		}
 
-ul.graph li.percent10
-{
-	background: #ff3300;
-	width: 10%;
-}
+		&.percent10{
+			background: #ff3300;
+			width: 10%;
+		}
 
-ul.graph li.percent20
-{
-	background: #ff3300;
-	width: 20%;
-}
+		&.percent20{
+			background: #ff3300;
+			width: 20%;
+		}
+		&.percent30
+		{
+			background: #ff3300;
+			width: 30%;
+		}
 
-ul.graph li.percent30
-{
-	background: #ff3300;
-	width: 30%;
-}
+		&.percent40
+		{
+			background: #ff3300;
+			width: 40%;
+		}
 
-ul.graph li.percent40
-{
-	background: #ff3300;
-	width: 40%;
-}
+		&.percent50
+		{
+			background: #ff6600;
+			width: 50%;
+		}
 
-ul.graph li.percent50
-{
-	background: #ff6600;
-	width: 50%;
-}
+		&.percent60
+		{
+			background: #ff6600;
+			width: 60%;
+		}
 
-ul.graph li.percent60
-{
-	background: #ff6600;
-	width: 60%;
-}
+		&.percent70
+		{
+			background: #ff6600;
+			width: 70%;
+		}
 
-ul.graph li.percent70
-{
-	background: #ff6600;
-	width: 70%;
-}
+		&.percent80
+		{
+			width: 80%;
+		}
 
-ul.graph li.percent80
-{
-	width: 80%;
-}
-
-ul.graph li.percent90
-{
-	width: 90%;
+		&.percent90
+		{
+			width: 90%;
+		}
+	}
 }
 
 h2.comp{
 	color: white;
-  text-shadow: 0 4px 4px gray;
+	text-shadow: 0 4px 4px gray;
 }

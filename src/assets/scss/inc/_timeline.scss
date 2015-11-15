@@ -1,15 +1,15 @@
-
 h3.univ{
   margin-top: -15px;
   color: SteelBlue;
 }
 
-i.icon-home{
-  visibility: hidden;
-}
-
-i.icon-graduation-cap{
-  visibility: hidden;
+i{
+  &.icon-graduation-cap{
+    visibility: hidden;
+  }
+  &.icon-home{
+    visibility: hidden;
+  }
 }
 
 .df, .af{
@@ -23,39 +23,42 @@ i.icon-graduation-cap{
 
 @media all and ( min-width: 610px ) {
 
-  i.icon-home{
-    visibility: visible;
-    margin-right: 15px;
-    border:0.1em solid Black;
-    border-radius:50%;
+  i{
+    &.icon-home{
+      visibility: visible;
+      margin-right: 15px;
+      border:0.1em solid Black;
+      border-radius:50%;
+    }
+
+    &.icon-graduation-cap{
+      visibility: visible;
+      margin-right: 15px;
+      border:0.1em solid DarkBlue;
+      border-radius:50%;
+    }
   }
 
   .df, .details{
     margin-top: 17px;
   }
 
-  i.icon-graduation-cap{
-    visibility: visible;
-    margin-right: 15px;
-    border:0.1em solid DarkBlue;
-    border-radius:50%;
-  }
+  div{
+    &.trait{
+      float:right;
+      margin-right: 27px;
+      width:5px;
+      border-left: 0.1em solid DarkBlue;
+      height:100px;
+    }
 
-  div.trait
-  {
-    float:right;
-    margin-right: 27px;
-    width:5px;
-    border-left: 0.1em solid DarkBlue;
-    height:100px;
-  }
-
-  div.trait-exp
-  {
-    margin-right: 30px;
-    padding-right: 15px;
-    border-right: 0.1em solid Black;
-    height:55px;
+    &.trait-exp
+    {
+      margin-right: 30px;
+      padding-right: 15px;
+      border-right: 0.1em solid Black;
+      height:55px;
+    }
   }
 
   .annee, .af{

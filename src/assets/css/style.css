@@ -80,10 +80,10 @@ h3.univ {
   margin-top: -15px;
   color: SteelBlue; }
 
-i.icon-home {
+i.icon-graduation-cap {
   visibility: hidden; }
 
-i.icon-graduation-cap {
+i.icon-home {
   visibility: hidden; }
 
 .df, .af {
@@ -99,13 +99,13 @@ i.icon-graduation-cap {
     margin-right: 15px;
     border: 0.1em solid Black;
     border-radius: 50%; }
-  .df, .details {
-    margin-top: 17px; }
   i.icon-graduation-cap {
     visibility: visible;
     margin-right: 15px;
     border: 0.1em solid DarkBlue;
     border-radius: 50%; }
+  .df, .details {
+    margin-top: 17px; }
   div.trait {
     float: right;
     margin-right: 27px;
@@ -127,52 +127,52 @@ ul.graph {
   padding: 10px;
   list-style-type: none;
   width: 100%; }
-
-ul.graph li {
-  margin-bottom: .5em;
-  padding: .2em;
-  font-size: 0.8em;
-  background: #33cc33;
-  border-radius: 5px;
-  color: #fff; }
-
-ul.graph li.percent0 {
-  background: #ff3300;
-  width: 0%; }
-
-ul.graph li.percent10 {
-  background: #ff3300;
-  width: 10%; }
-
-ul.graph li.percent20 {
-  background: #ff3300;
-  width: 20%; }
-
-ul.graph li.percent30 {
-  background: #ff3300;
-  width: 30%; }
-
-ul.graph li.percent40 {
-  background: #ff3300;
-  width: 40%; }
-
-ul.graph li.percent50 {
-  background: #ff6600;
-  width: 50%; }
-
-ul.graph li.percent60 {
-  background: #ff6600;
-  width: 60%; }
-
-ul.graph li.percent70 {
-  background: #ff6600;
-  width: 70%; }
-
-ul.graph li.percent80 {
-  width: 80%; }
-
-ul.graph li.percent90 {
-  width: 90%; }
+  ul.graph
+li {
+    margin-bottom: .5em;
+    padding: .2em;
+    font-size: 0.8em;
+    background: #33cc33;
+    border-radius: 5px;
+    color: #fff; }
+    ul.graph
+li.percent0 {
+      background: #ff3300;
+      width: 0%; }
+    ul.graph
+li.percent10 {
+      background: #ff3300;
+      width: 10%; }
+    ul.graph
+li.percent20 {
+      background: #ff3300;
+      width: 20%; }
+    ul.graph
+li.percent30 {
+      background: #ff3300;
+      width: 30%; }
+    ul.graph
+li.percent40 {
+      background: #ff3300;
+      width: 40%; }
+    ul.graph
+li.percent50 {
+      background: #ff6600;
+      width: 50%; }
+    ul.graph
+li.percent60 {
+      background: #ff6600;
+      width: 60%; }
+    ul.graph
+li.percent70 {
+      background: #ff6600;
+      width: 70%; }
+    ul.graph
+li.percent80 {
+      width: 80%; }
+    ul.graph
+li.percent90 {
+      width: 90%; }
 
 h2.comp {
   color: white;
@@ -232,17 +232,35 @@ div.accueil {
   width: 100%;
   background-size: cover; }
 
+div.rea {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  height: 223px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  /* For IE8 and earlier */ }
+  div.rea img {
+    height: 100%;
+    border-radius: 10px; }
+  div.rea:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */ }
+
 div.transbox {
   background-color: #ffffff;
   opacity: 0.6;
   height: 800px;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */ }
-
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000; }
+  div.transbox
+p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000; }
 
 div.contact, div.exp {
   background-color: #ABC8E2;
