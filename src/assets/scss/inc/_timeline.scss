@@ -4,17 +4,40 @@ h3.univ{
   color: SteelBlue;
 }
 
+i.icon-home{
+  visibility: hidden;
+}
+
+i.icon-graduation-cap{
+  visibility: hidden;
+}
+
+.df, .af{
+  color:RoyalBlue;
+}
+
+.df, .details{
+  margin-top: -10px;
+  font-size: 18px;
+}
+
 @media all and ( min-width: 610px ) {
 
   i.icon-home{
+    visibility: visible;
     margin-right: 15px;
     border:0.1em solid Black;
     border-radius:50%;
   }
 
+  .df, .details{
+    margin-top: 17px;
+  }
+
   i.icon-graduation-cap{
+    visibility: visible;
     margin-right: 15px;
-    border:0.1em solid LightSkyBlue;
+    border:0.1em solid DarkBlue;
     border-radius:50%;
   }
 
@@ -23,14 +46,13 @@ h3.univ{
     float:right;
     margin-right: 27px;
     width:5px;
-    border-left: 0.1em solid LightSkyBlue;
+    border-left: 0.1em solid DarkBlue;
     height:100px;
   }
 
   div.trait-exp
   {
     margin-right: 30px;
-    //width:5px;
     padding-right: 15px;
     border-right: 0.1em solid Black;
     height:55px;
@@ -43,9 +65,4 @@ h3.univ{
   .details, .df{
     text-align: left;
   }
-
-  .df, .af{
-    color:RoyalBlue;
-  }
-
 }
