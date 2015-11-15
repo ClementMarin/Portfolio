@@ -111,10 +111,27 @@ h1 {
   font-size: 2em;
   text-shadow: 0 4px 4px gray;
   margin-bottom: 10px;
+
+  &.ac{
+    color: #000000;
+    font-size:60px;
+  }
 }
 
 h2 {
   font-weight: 700;
+
+  &.ac{
+    color: #000000;
+    font-size: 20px;
+  }
+
+  &.rea{
+    border-radius: 0 0 10px 10px;
+    z-index:1;
+    margin-top:-30px;
+    opacity:1.0;
+  }
 }
 
 /* grid */
@@ -135,9 +152,16 @@ h2 {
 }
 
 @media all and ( min-width: 610px ) {
+  h1{
+    font-size:100px;
+  }
 
   h2{
     text-align: center;
+
+    &.ac{
+      font-size:30px;
+    }
   }
 
   /* set col widths */

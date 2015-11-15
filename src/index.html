@@ -31,8 +31,13 @@
   <div class="wrapper">
     <div class="accueil">
       <div class="transbox">
-        <h1 style="color: #000000;font-size:100px;">Clément Marin</h1>
-        <h2>Développeur web, mobile et Java</h2>
+        <div style="text-align: center;width: 50%;height:30%; margin: auto; padding-top:12%">
+          <h1 class="ac">Clément Marin</h1>
+          <h2 class="ac">Développeur web, mobile et Java</h2>
+          <p style="width:75%; margin:auto;">Etudiant en informatique en Licence professionnelle Services Mobiles et Interface Nomade (SMIN).
+            Je suis actuellement en recherche d'une alternance ou d'un stage pour parfaire mes connaissances.<br><br>
+            Si mon profil vous intéresse, n'hésitez pas à <a style="color:blue;" href="#contact">me contacter</a>.</p>
+        </div>
       </div>
     </div>
     <div class="form" id="form">
@@ -168,33 +173,14 @@
       </div><!-- /.row -->
     </div>
     <div class="real" id="real">
-      <h1>Réalisations</h1>
+      <h1>Réalisation</h1>
       <div class="row">
         <div class="col-1-4">
           <div class="rea">
-            <h2>efzfezfezf</h2>
-            <p style="text-align:justify">
-            </p>
-          </div>
-        </div>
-        <div class="col-1-4">
-          <div class="rea">
-            <img src="./assets/images/hockey.jpg"></img>
-            <h2 style="border-radius: 0 0 10px 10px;z-index:1;margin-top:-30px;opacity:1.0">efzfezfezf</h2>
-          </div>
-        </div>
-        <div class="col-1-4">
-          <div class="rea">
-            <h2>efzfezfezf</h2>
-            <p style="text-align:justify">
-            </p>
-          </div>
-        </div>
-        <div class="col-1-4">
-          <div class="rea">
-            <h2>efzfezfezf</h2>
-            <p style="text-align:justify">
-            </p>
+            <a href="http://clement-marin.xyz">
+            <img src="./assets/images/portfolio.jpg"></img>
+            <h2 class="rea">PortFolio</h2>
+          </a>
           </div>
         </div>
       </div><!-- /.row -->
@@ -240,15 +226,15 @@
           <i class="icon-mobile"></i>: 06 88 54 87 52 <br><br>
           <i class="icon-mail-1"></i>: <a href="mailto:contact@clement-marin.xyz">contact@clement-marin.xyz</a> <br><br>
           <i class="icon-file-pdf"></i>: <a href="CV_Clement_MARIN_LP_SMIN.pdf">Télécharger</a><br/><br>
-          <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8"><i class="icon-linkedin-rect"></i></a>
+          <i class="icon-linkedin-rect">: <a href="https://fr.linkedin.com/pub/cl%C3%A9ment-marin/a4/2/6a8">LinkedIn</i></a>
         </div>
         <div class="col-2-3">
           <h2>Formulaire de contact</h2>
-          <form name="form1" method="post" action="./src/envoyer.php">
+          <form name="form1" method="post" action="./envoyer.php">
             <input type="text" placeholder="Entrez votre nom ou société" name="name" id="name" required ><br/><br/>
-            <input type="email" placeholder="Votre-email@gmail.com" name="email" id="email" required><br/><br/>
-            <input type="text" placeholder="Entrez l'objet du message" name="city" id="city" required><br/><br/>
-            <textarea name="monmessage" placeholder="Entrez le message à envoyer" id="monmessage" rows="4" cols="50"></textarea><br/><br/>
+            <input type="email" placeholder="Votre-email@gmail.com" name="email" id="email" required ><br/><br/>
+            <input type="text" placeholder="Entrez l'objet du message" name="city" id="city" required ><br/><br/>
+            <textarea name="monmessage" placeholder="Entrez le message à envoyer" id="monmessage" rows="4" cols="50" ></textarea><br/><br/>
             <input class="sendButton" type="submit" name="Submit" value="Envoyer">
           </form>
         </div>
